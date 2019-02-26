@@ -33,8 +33,7 @@ const URL_LEGENDASTV = 'http://legendas.tv/login';
 
         for (const legenda of legendas) {
             const imagem = await legenda.$eval('img', img => img.getAttribute('src')).catch(x => null)
-            const nome = await legenda.$eval('p', p => p.innerText)
-            //#resultado_busca > div > article:nth-child(2) > div:nth-child(12) > img
+            const nome = await legenda.$eval('p', p => p.innerText).catch( x => null)
             const link = 'http://legendas.tv' + await legenda.$eval('a', img => img.getAttribute('href')).catch(x => null)
 
             data.push({ nome, imagem, link })

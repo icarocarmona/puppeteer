@@ -1,0 +1,3 @@
+#Inicializando projeto
+
+    npm init

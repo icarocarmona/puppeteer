@@ -11,6 +11,7 @@
 
 ```sh
     Exemplo Windows: set LEGENDASTV_USER=meu_usuario
+    set LEGENDASTV_PWS=sua_senha
 ```
 
 ## Rodando o projeto
